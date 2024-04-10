@@ -1,0 +1,32 @@
+package web_app;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class create_ac {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\exam\\Desktop\\web_application\\chromedriver\\chromedriver.exe");
+		WebDriver driver =new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+		driver.get("https://www.facebook.com/");   
+		driver.findElement(By.xpath("id('u_0_1')")).sendKeys("Tomprakash");
+		driver.findElement(By.xpath("id('u_0_3')")).sendKeys("Sahu");
+		driver.findElement(By.xpath("id('u_0_6')")).sendKeys("7869084527");
+		driver.findElement(By.xpath("id('u_0_9')")).sendKeys("7869084527");
+		driver.findElement(By.xpath("id('u_0_b')")).sendKeys("cs083595");
+        Select date = new Select(driver.findElement(By.xpath("id('day')")));
+        date.selectByVisibleText("24");
+        Select month = new Select(driver.findElement(By.xpath("id('month')")));
+        month.selectByVisibleText("Dec");
+        Select year = new Select(driver.findElement(By.xpath("id('year')")));
+        year.selectByVisibleText("1989");
+        driver.findElement(By.className("_58mt")).click(); //this code is working for female
+        //fb.findElement(By.className("_5k")).click(); //this code is not working for male
+        driver.findElement(By.name("Create an account")).submit();
+	}
+
+}

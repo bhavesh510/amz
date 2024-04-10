@@ -1,0 +1,8 @@
+package web_app.web_app;
+
+public class Snippet {
+	public static void main(String[] args) {
+		web_application
+	}
+}
+

@@ -1,0 +1,10 @@
+package web_app;
+
+public class Webapplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

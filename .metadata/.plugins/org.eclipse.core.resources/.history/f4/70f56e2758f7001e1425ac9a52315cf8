@@ -1,0 +1,29 @@
+package web_app;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Webapplication {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\exam\\Desktop\\web_application\\chromedriver\\chromedriver.exe");
+		WebDriver driver =new ChromeDriver();
+		driver.get("https://www.google.com/");
+		driver.findElement(By.className("gLFyf")).sendKeys("swiggy");
+		driver.findElement(By.className("VuuXrf")).click();
+		driver.findElement(By.className("_2CgXb")).click();
+		//driver.findElement(By.className("VuuXrf")).click();
+		driver.findElement(By.id("")).sendKeys("rspatil1131@gmail.com");
+		Thread.sleep(2000);
+		driver.findElement(By.id("pass")).sendKeys("Rakesh@123");
+		Thread.sleep(2000);
+		driver.findElement(By.name("login")).click();
+		
+		
+		
+		
+	}
+
+}
